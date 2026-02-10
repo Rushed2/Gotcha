@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,19 +13,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            text-align: center;
+            height: 100dvh; /* FIX: centers correctly on all devices */
+            center;
             padding: 20px;
+            margin: 0;
         }
         #quote {
             font-size: 2rem;
-            </style>
+        }
+    </style>
 </head>
 <body>
 
 <div id="quote"></div>
 
 <script>
+
     const quotes = [
 
 "This isn’t a shitshow, it’s a fucking apocalypse on a tight deadline.",
