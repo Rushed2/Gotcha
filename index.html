@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotcha Quotes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        #quote {
+            font-size: 2rem;
+            </style>
+</head>
+<body>
+
+<div id="quote"></div>
+
+<script>
+    const quotes = [
+        "Chaos called — I answered politely but firmly.",
+        "Today's vibe: pretending to care, professionally.",
+        "Running on caffeine, sarcasm, and questionable decisions.",
+        "If it requires more than two brain cells today, reschedule.",
+        "My patience is on backorder. No ETA available."
+    ];
+
+    document.getElementById("quote").innerText =
+        quotes[Math.floor(Math.random() * quotes.length)];
+</script>
+
+</body>
+</html>
+``
